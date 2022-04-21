@@ -10,16 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobi_App">
         <activity
-            android:name=".Screen.View.Bank"
-            android:exported="false" />
-        <activity
-            android:name=".Screen.View.MainActivity"
-            android:exported="true">
+            android:name=".Screen.View.Recycle_View"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screen.View.Bank"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.View.MainActivity"
+            android:exported="false">
+
         </activity>
     </application>
 
