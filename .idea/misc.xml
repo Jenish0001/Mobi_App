@@ -6,7 +6,9 @@
         <entry key="app/src/main/res/drawable/item.xml" value="0.2345" />
         <entry key="app/src/main/res/layout/activity_bank.xml" value="0.16875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/activity_recycle_view.xml" value="0.2341485507246377" />
         <entry key="app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_rv.xml" value="0.24537037037037038" />
       </map>
     </option>
   </component>
