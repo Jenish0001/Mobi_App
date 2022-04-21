@@ -13,29 +13,27 @@ import com.example.mobi_app.R;
 import com.example.mobi_app.Screen.View.Recycle_View;
 
 public class MyRvAdpter extends RecyclerView.Adapter<MyRvAdpter.ViewData> {
-Activity activity;
-String[] city;
-
+    Activity activity;
+    String[] city;
 
     public MyRvAdpter(Recycle_View recycle_view, String[] city) {
 
-        activity=recycle_view;
-        this.city=city;
-
+        activity = recycle_view;
+        this.city = city;
     }
 
     @NonNull
     @Override
     public ViewData onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(activity).inflate(R.layout.item_rv,parent,false);
-        ViewData  viewData=new ViewData(view);
+        View view = LayoutInflater.from(activity).inflate(R.layout.item_rv, parent, false);
+        ViewData viewData = new ViewData(view);
 
         return viewData;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewData holder, int position) {
-   holder.txt.setText(city[position]);
+        holder.txt.setText(city[position]);
     }
 
     @Override
@@ -43,14 +41,15 @@ String[] city;
         return city.length;
     }
 
-    class ViewData extends RecyclerView.ViewHolder{
+    class ViewData extends RecyclerView.ViewHolder {
 
         TextView txt;
-       public ViewData(@NonNull View itemView) {
-           super(itemView);
-           txt = itemView.findViewById(R.id.txt);
-       }
-   }
+
+        public ViewData(@NonNull View itemView) {
+            super(itemView);
+            txt = itemView.findViewById(R.id.txt);
+        }
+    }
 
 
 }

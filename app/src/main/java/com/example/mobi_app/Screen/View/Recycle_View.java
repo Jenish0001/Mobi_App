@@ -1,6 +1,8 @@
 package com.example.mobi_app.Screen.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -18,7 +20,10 @@ public class Recycle_View extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycle_view);
         blinding();
-        MyRvAdpter adapter = new MyRvAdpter(Recycle_View.this,city);
+        MyRvAdpter adapter = new MyRvAdpter(Recycle_View.this, city);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(Recycle_View.this);
+        rv_view.setLayoutManager(layoutManager);
+        rv_view.setAdapter(adapter);
 
     }
 
